@@ -1,0 +1,85 @@
+1-  Crie uma pasta no C:\ chamada git ( C:\git)
+2-  cd /c
+3-  cd git
+4-  ls
+5-  git config --global user.email "gventurasistemas@gmail.com"
+6-  git config --global user.name "gventurasistemas"
+
+
+///////////////// Copiar para seu computador ////////////////////////
+
+7-  git clone https://github.com/gventurasistemas/TestGit.git
+
+///////////////// Adicionar um novo arquivo na pasta TestGit e jogar para o github ////////////////////////
+
+8-  Crie um arquivo txt com o nome de teste
+9-  ls
+10-  cd TestGit  (entra na pasta que clonou do github)
+11-  git add teste.txt ou git add . (para adicionar tudo)    (arquivo criado manualmente na pasta TestGit)			Para adiconar pastas    git add nomeDaPasta/
+12-  git status
+
+
+13-  git commit -m "primeiro commit" teste.txt				Para comitar pastas    git commit -m "primeiro commit" nomeDaPasta/
+14-  git push -u origin master				Maioria das vezes somente 		git push
+
+///////////////// Modificando um arquivo na pasta ////////////////////////
+
+15-  Edite o arquivo teste.txt
+16-  git status   (você verá as mudanças)
+17-  git commit -m "primeiro commit" teste.txt
+18-  git push -u origin master
+19-  git status   (você verá as mudanças no github)
+
+
+///////////////// Atualizar o projeto git pull ////////////////////////
+Ao iniciar um projeto é sempre recomendável iniciar com o git pull , se caso alguém modificou o projeto no github, 
+o git pull vai atualizar o seu projeto que esta na máquina local
+
+20-  git status   (você verá as mudanças no github)
+
+
+///////////////// Branches ////////////////////////
+
+Para isso existe o conceito de branch, que é justamente ramificar o seu projeto em 2, como se cada um deles fosse um repositório, e depois juntá-lo novamente
+21-  Criamos um branch lá no site do github, chamado   new_branch.
+22-  git pull
+23-  git checkout new_branch      ( git checkout nomeDoBranchQueVoceCriou)
+
+Neste momento, estamos no branch new_menu, e tudo que fizermos agora será pertencente a ele. 
+Caso haja necessidade de voltar ao branch master, basta realizar o comando git checkout master.
+
+
+///////////////// Merge////////////////////////
+Merge server para mesclar um branche com o outro, por exemplo
+
+24-  git checkout master              (entramos no branche master)
+25-  git merge new_branch           (estamos mesclando os arquivos do master com o do new_branch)
+26-  git push -u origin master
+
+
+
+///////////////// Remover os arquivos no github que foram deletados na pasta local////////////////////////
+
+27-  git status
+28-  git commit -am "Removido arquivo..."
+29-  git push
+
+
+///////////////// Comandos basicos do git ////////////////////////
+
+Comandos iniciais do git
+Com o repositório na sua máquina, vamos aprender 4 comandos iniciais que farão parte da sua vida a partir de agora:
+
+git add <arquivos...>            Este comando adiciona o(s) arquivo(s) em um lugar que chamamos de INDEX, que funciona como uma área do git no qual os arquivos possam ser enviados ao Github. É importante saber que ADD não está adicionando um arquivo novo ao repositório, mas sim dizendo que o arquivo (sendo novo ou não) está sendo preparado para entrar na próxima revisão do repositório.
+
+git commit -m "comentário qualquer"           Este comando realiza o que chamamos de “commit”, que significa pegar todos os arquivos que estão naquele lugar INDEX que o comando add adicionou e criar uma revisão com um número e um comentário, que será vista por todos.
+
+git push          Push (empurrar) é usado para publicar todos os seus commits para o github. Neste momento, será pedido a sua senha.
+
+git status        Exibe o status do seu repositório atual
+
+git pull para atualizar o seu projeto.
+
+
+
+
