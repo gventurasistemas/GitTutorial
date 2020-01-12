@@ -1,9 +1,17 @@
+git init   //Inicializa um projeto com git
+
+Para sair do git log no git bash, tecle q.
+
+
 1-  Crie uma pasta no C:\ chamada git ( C:\git)
 2-  cd /c
 3-  cd git
 4-  ls
 5-  git config --global user.email "gventurasistemas@gmail.com"
 6-  git config --global user.name "gventurasistemas"
+
+git config --global user.email "gventurasistemas@gmail.com"
+git config --global user.name "gventurasistemas"
 
 
 ///////////////// Copiar para seu computador ////////////////////////
@@ -19,33 +27,39 @@
 12-  git status
 
 
-13-  git commit -m "primeiro commit" teste.txt				Para comitar pastas    git commit -m "primeiro commit" nomeDaPasta/
+13-  git commit -m "primeiro commit" 				Para comitar pastas    git commit -m "primeiro commit" nomeDaPasta/
 14-  git push -u origin master				Maioria das vezes somente 		git push
 
 ///////////////// Modificando um arquivo na pasta ////////////////////////
 
 15-  Edite o arquivo teste.txt
-16-  git status   (vocÍ ver· as mudanÁas)
+16-  git status   (voc√™ ver√° as mudan√ßas)
 17-  git commit -m "primeiro commit" teste.txt
 18-  git push -u origin master
-19-  git status   (vocÍ ver· as mudanÁas no github)
+19-  git status   (voc√™ ver√° as mudan√ßas no github)
 
 
 ///////////////// Atualizar o projeto git pull ////////////////////////
-Ao iniciar um projeto È sempre recomend·vel iniciar com o git pull , se caso alguÈm modificou o projeto no github, 
-o git pull vai atualizar o seu projeto que esta na m·quina local
+Ao iniciar um projeto √© sempre recomend√°vel iniciar com o git pull , se caso algu√©m modificou o projeto no github, 
+o git pull vai atualizar o seu projeto que esta na m√°quina local
 
-20-  git status   (vocÍ ver· as mudanÁas no github)
+20-  git status   (voc√™ ver√° as mudan√ßas no github)
 
 
 ///////////////// Branches ////////////////////////
 
-Para isso existe o conceito de branch, que È justamente ramificar o seu projeto em 2, como se cada um deles fosse um repositÛrio, e depois junt·-lo novamente
-21-  Criamos um branch l· no site do github, chamado   new_branch.
+Para isso existe o conceito de branch, que √© justamente ramificar o seu projeto em 2, como se cada um deles fosse um reposit√≥rio, e depois junt√°-lo novamente
+
+- git branch nomeDoBranch //Cria um branch
+
+//√â poss√≠vel criar e selecionar uma branch com apenas um comando:
+git checkout -b work
+
+21-  Criamos um branch l√° no site do github, chamado   new_branch.
 22-  git pull
 23-  git checkout new_branch      ( git checkout nomeDoBranchQueVoceCriou)
 
-Neste momento, estamos no branch new_menu, e tudo que fizermos agora ser· pertencente a ele. 
+Neste momento, estamos no branch new_menu, e tudo que fizermos agora ser√° pertencente a ele. 
 Caso haja necessidade de voltar ao branch master, basta realizar o comando git checkout master.
 
 
@@ -68,18 +82,19 @@ Merge server para mesclar um branche com o outro, por exemplo
 ///////////////// Comandos basicos do git ////////////////////////
 
 Comandos iniciais do git
-Com o repositÛrio na sua m·quina, vamos aprender 4 comandos iniciais que far„o parte da sua vida a partir de agora:
+Com o reposit√≥rio na sua m√°quina, vamos aprender 4 comandos iniciais que far√£o parte da sua vida a partir de agora:
 
-git add <arquivos...>            Este comando adiciona o(s) arquivo(s) em um lugar que chamamos de INDEX, que funciona como uma ·rea do git no qual os arquivos possam ser enviados ao Github. … importante saber que ADD n„o est· adicionando um arquivo novo ao repositÛrio, mas sim dizendo que o arquivo (sendo novo ou n„o) est· sendo preparado para entrar na prÛxima revis„o do repositÛrio.
+git add <arquivos...>            Este comando adiciona o(s) arquivo(s) em um lugar que chamamos de INDEX, que funciona como uma √°rea do git no qual os arquivos possam ser enviados ao Github. √â importante saber que ADD n√£o est√° adicionando um arquivo novo ao reposit√≥rio, mas sim dizendo que o arquivo (sendo novo ou n√£o) est√° sendo preparado para entrar na pr√≥xima revis√£o do reposit√≥rio.
 
-git commit -m "coment·rio qualquer"           Este comando realiza o que chamamos de ìcommitî, que significa pegar todos os arquivos que est„o naquele lugar INDEX que o comando add adicionou e criar uma revis„o com um n˙mero e um coment·rio, que ser· vista por todos.
+git commit -m "coment√°rio qualquer"           Este comando realiza o que chamamos de ‚Äúcommit‚Äù, que significa pegar todos os arquivos que est√£o naquele lugar INDEX que o comando add adicionou e criar uma revis√£o com um n√∫mero e um coment√°rio, que ser√° vista por todos.
 
-git push          Push (empurrar) È usado para publicar todos os seus commits para o github. Neste momento, ser· pedido a sua senha.
+git push          Push (empurrar) √© usado para publicar todos os seus commits para o github. Neste momento, ser√° pedido a sua senha.
 
-git status        Exibe o status do seu repositÛrio atual
+git status        Exibe o status do seu reposit√≥rio atual
 
 git pull para atualizar o seu projeto.
 
 
-
+-Mudar as credenciais do git (usar outra conta)
+Para atualizar suas credenciais do Git, v√° ao Painel de Controle -> Gerenciador de Credenciais -> Credenciais Gen√©ricas. Encontre as credenciais relacionadas √† sua conta do git e edite-as para usar a senha atualizada.
 
